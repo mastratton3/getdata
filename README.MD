@@ -1,27 +1,29 @@
 #Read Me - Smart Phone Gyro Data Analysis
 
 ##Brief Summary of Data and Methodology
+
 For this project I was looking at data for smart phones gyro data. I took the data from the training and test sets and combined them to make a summarized, clean, and tidy set. Please see below for the highlevel steps and the more detailed steps of the analysis:
-*Read in the training data from the x_train file - This contained all the measurements but not the labels
-*Read in the features file which included the column headings for the measurement data... Used this to set the column names to something descriptive
-*Read in the subjects of the training data from the subject_train.txt
-*Read in the activities of the training data from the Y_train.txt file.
-*NOTE: It is important to note here that each entry in the subjects and activities corresponds to the row in the training data
-*Combined the subjects and activity ids together into a single dataframe using cbind
-*Combined the subject/activity data to the actual data measurements using cbind
-*Repeated the above process for the test data
-*Combined the test and training data using rbind
-*Found the necessary columns using partial matching for both mean and std
-*NOTE: Only matched on mean() and std() which does not included cases where mean or std could appear earlier in the name... this was so we only got the pure measurements of mean
-*Combined the mean and std deviation vectors and turned the first two columns to true as well... Then made this back into a logical
-*Applied the logical vector to the data set to filter out the unncessary columns
-*Read in the activity labels
-*Merged the labels using the activity ids as the key
-*Re-arranged the columns to get it into proper order
-*Wrote the complete data to a file
-*Used the aggregate function to calculate the mean of each measurement for each subject and activity
-*Wrote this data to a file
-*This resulted in a 180x68 data frame
+1. Read in the training data from the x_train file - This contained all the measurements but not the labels
+2. Read in the features file which included the column headings for the measurement data... Used this to set the column names to something descriptive
+3. Read in the subjects of the training data from the subject_train.txt
+4. Read in the activities of the training data from the Y_train.txt file.
+5. NOTE: It is important to note here that each entry in the subjects and activities corresponds to the row in the training data
+6. Combined the subjects and activity ids together into a single dataframe using cbind
+7. Combined the subject/activity data to the actual data measurements using cbind
+8. Repeated the above process for the test data
+9. Combined the test and training data using rbind
+10. Found the necessary columns using partial matching for both mean and std
+11. NOTE: Only matched on mean() and std() which does not included cases where mean or std could appear earlier in the name... this was so we only got the pure measurements of mean
+12. Combined the mean and std deviation vectors and turned the first two columns to true as well... Then made this back into a logical
+13. Applied the logical vector to the data set to filter out the unncessary columns
+14. Read in the activity labels
+15. Merged the labels using the activity ids as the key
+16. Re-arranged the columns to get it into proper order
+17. Wrote the complete data to a file
+18. Used the aggregate function to calculate the mean of each measurement for each subject and activity
+19. Wrote this data to a file
+20. This resulted in a 180x68 data frame
+
 
 ##Data Summary
 Please see the code book for a detailed summary of the data fields
