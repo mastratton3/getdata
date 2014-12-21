@@ -1,6 +1,7 @@
 #Read Me - Smart Phone Gyro Data Analysis
 
-##Brief Summary of Data and Methodology
+###Brief Summary of Data and Methodology
+
 
 For this project I was looking at data for smart phones gyro data. I took the data from the training and test sets and combined them to make a summarized, clean, and tidy set. Please see below for the highlevel steps and the more detailed steps of the analysis:
 1. Read in the training data from the x_train file - This contained all the measurements but not the labels
@@ -25,7 +26,7 @@ For this project I was looking at data for smart phones gyro data. I took the da
 20. This resulted in a 180x68 data frame
 
 
-##Data Summary
+###Data Summary
 Please see the code book for a detailed summary of the data fields
 
 
